@@ -9,7 +9,7 @@ var url = require('url');
 
 url.format({ query: introspectionQuery });
 
-const graphqlHubUrl = 'http://www.GraphQLHub.com/graphql';
+var graphqlHubUrl = 'http://www.GraphQLHub.com/graphql';
 
 var schema = require('./graphiql-schema.json');
 
