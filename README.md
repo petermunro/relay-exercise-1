@@ -1,7 +1,7 @@
 # Relay Exercise 1
 
 This exercise has some missing pieces for you to complete.
-The aim is to retrieve a single article from _Hacker News_.
+The aim is to retrieve a single article from _Hacker News_, via Clay Allsopp's service at https://www.graphqlhub.com/.
 
 1. Browse the source. Answer these questions:
 
