@@ -3,6 +3,7 @@ var path = require('path');
 module.exports = {
   entry: path.resolve(__dirname, 'index.js'),
   output: {filename: 'index.bundle.js', path: './'},
+  devtool: "source-map",
   module: {
     loaders: [
       {
