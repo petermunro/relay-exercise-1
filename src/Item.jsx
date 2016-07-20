@@ -10,9 +10,8 @@ class Item extends Component {
 
     return (
       <div key={item.id}>
-        <h1>{item.title}</h1>
-        <p>[Exercise: Make the title clickable so that it takes you to the story's webpage]</p>
-        <h2>Score [Exercise: add the article's score], by [Exercise: add the author's id here]</h2>
+        <h1><a href={item.url}>{item.title}</a></h1>
+        <h2>Score {item.score}, by {item.by.id}</h2>
         <hr />
       </div>
     );
@@ -26,6 +25,11 @@ Item = Relay.createContainer(Item, {
         item(id: 11956137) {
           id
           title
+          url
+          score
+          by {
+            id
+          }
         }
       }
     `

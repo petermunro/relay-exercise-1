@@ -13,7 +13,7 @@ class HackerNewsRoute extends Relay.Route {
       return Relay.QL`
         query root {
           hn {
-              [Exercise: add child component's fragment here]
+              ${Component.getFragment('storyItem')}
           }
         }
     `})

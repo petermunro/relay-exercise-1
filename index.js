@@ -11,8 +11,7 @@ Relay.injectNetworkLayer(
 
 const mountNode = document.getElementById('container');
 const rootComponent = <Relay.RootContainer
-  Component={  /* [Exercise: Which component do we want to render? Hint: It's not the HackerNewsRoute]] */ }
+  Component={ Item }
   route={new HackerNewsRoute()} />;
 
 ReactDOM.render(rootComponent, mountNode);
-
